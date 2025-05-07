@@ -96,7 +96,7 @@ Analyzes how different classification thresholds affect model performance.
 Run with:
 
 ```bash
-python threshold_analyzer.py --input predictions.csv --thresholds 0.5 0.55 0.6 0.65 --output_dir results/
+python threshold_analyzer.py --input eval_2023_predictions.csv --thresholds 0.5 0.55 0.6 0.65 --output_dir results/
 ```
 
 ---
