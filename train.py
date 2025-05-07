@@ -426,7 +426,7 @@ def train_and_save_model(X, y, identifiers, model_path):
     results['actual_wicket'] = y_test
     results['predicted_wicket'] = y_pred
     results['wicket_probability'] = y_pred_proba
-    results.to_csv('test_predictionsll.csv', index=False)
+    results.to_csv('test_predictions.csv', index=False)
     
     # Save model and scaler
     model_info = {
@@ -437,7 +437,7 @@ def train_and_save_model(X, y, identifiers, model_path):
     }
     
     joblib.dump(model_info, model_path)
-    feature_importance.to_csv('feature_importancell.csv', index=False)
+    feature_importance.to_csv('feature_importance.csv', index=False)
     
     print(f"Model training completed in {(time() - start_time)/60:.2f} minutes")
     print(f"Model saved to {model_path}")
